@@ -74,6 +74,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="y4oung" type="application/atom+xml" />
+
 
 
 
@@ -346,16 +348,16 @@
 
       
         
-          
-            <p>这几天在How2j的网站补一下前端的基础知识点，有很多的东西是自己不知道的，算是从0开始学习，也算是对以前零散的前端知识的查漏补缺。今天看的css里边有一些内容，我怕看过一遍记不住，所以在这里记录一下。</p>
+          <p>这几天在How2j的网站补一下前端的基础知识点，有很多的东西是自己不知道的，算是从0开始学习，也算是对以前零散的前端知识的查漏补缺。今天看的css里边有一些内容，我怕看过一遍记不住，所以在这里记录一下。</p>
 <hr>
 <h2 id="背景重复"><a href="#背景重复" class="headerlink" title="背景重复"></a>背景重复</h2><p>background-repeat属性值可以选<br>repeat; 水平垂直方向都重复<br>repeat-x; 只有水平方向重复<br>repeat-y; 只有垂直方向重复<br>no-repeat; 无重复</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-id">#norepeat</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attribute">background-image</span>:<span class="built_in">url</span>(/study/background_small.jpg);</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">  &#125;</span><br><span class="line"> </span><br><span class="line"><span class="selector-tag">div</span><span class="selector-id">#repeat-x</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attribute">background-image</span>:<span class="built_in">url</span>(/study/background_small.jpg);</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-repeat</span>: repeat-x;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"> </span><br><span class="line">&lt;div id="norepeat"&gt;</span><br><span class="line">  背景不重复</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"> </span><br><span class="line">&lt;div id="repeat-x"&gt;</span><br><span class="line">  背景水平重复</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>效果如下：<img src="https://ws1.sinaimg.cn/large/b609cd3dgy1foru07sdxxj206804nq2t.jpg" alt=""></p>
-<h2 id="背景平铺"><a href="#背景平铺" class="headerlink" title="背景平铺"></a>背景平铺</h2><p><strong>属性</strong>：background-size<br><strong>值</strong>：contain<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">style</span>&gt;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-id">#contain</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attribute">background-image</span>:<span class="built_in">url</span>(/study/background_small.jpg);</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-size</span>: contain;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">  </span><br><span class="line">&lt;div id="contain"&gt;</span><br><span class="line">   背景平铺，通过拉伸实现，会有失真</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<p>效果如下：<img src="https://ws1.sinaimg.cn/large/b609cd3dgy1foru43gc02j2060037q2t.jpg" alt=""></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/24/css学习小记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -472,22 +474,16 @@
 
       
         
-          
-            <p>时间感觉越来越紧迫了，自己不会的东西很多，保研心里没底。所以从今天开始，每天都刷一些数据结构和算法的题吧，poj，zoj，PAT，北大百炼，leetcode，code wars，newcoder这些。博客就用来记录一下刷题过程中的一些知识点、感悟和总结吧。</p>
+          <p>时间感觉越来越紧迫了，自己不会的东西很多，保研心里没底。所以从今天开始，每天都刷一些数据结构和算法的题吧，poj，zoj，PAT，北大百炼，leetcode，code wars，newcoder这些。博客就用来记录一下刷题过程中的一些知识点、感悟和总结吧。</p>
 <hr>
 <p>今天完成的第一题是2017北大计算机研究生推免上机考试的第一题：<a href="http://bailian.openjudge.cn/tm2017/A/" target="_blank" rel="noopener">素因子分解</a></p>
-<h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>输入一个数，输出其素因子分解表达式。</p>
-<h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>输入一个整数 n (2 &lt;= n &lt; 100)。</p>
-<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>输出该整数的因子分解表达式。<br>表达式中各个素数从小到大排列。<br>如果该整数可以分解出因子a的b次方，当b大于1时，写做 a^b ；当b等于1时，则直接写成a。</p>
-<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">60</span><br></pre></td></tr></table></figure>
-<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2^2*3*5</span><br></pre></td></tr></table></figure>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>其实一开始自己分析的时候，对一个整数n，觉得要从最小的质数2开始，一直往上找，找到n-1为止，去判断n是否能被这些因数中为质数的因数整除。那么，这个问题的难点就在于，怎么去在0到n的范围内，哪些数字为质数。要找出所有在范围内的素数，其实有一个方法，<a href="https://baike.baidu.com/item/%E5%9F%83%E6%8B%89%E6%89%98%E6%96%AF%E7%89%B9%E5%B0%BC%E7%AD%9B%E6%B3%95?fromId=1037860" target="_blank" rel="noopener">“埃拉托斯特尼筛法”</a>，要得到自然数n以内的全部素数，必须把不大于  的所有素数的倍数剔除，剩下的就是素数。<br>给出要筛数值的范围n，找出以内的素数。先用2去筛，即把2留下，把2的倍数剔除掉；再用下一个质数，也就是3筛，把3留下，把3的倍数剔除掉；接下去用下一个质数5筛，把5留下，把5的倍数剔除掉；不断重复下去……。</p>
-<p>不过，后来发现其实不用这么做，因为当你用n去除2时，因为会循环地去除2，所以只要是2的倍数的都不用去考虑了，首先他们也不是质数，其次当用n去除4,6,8,10······时，因为在除2时，已经除去了，所以这些都已经不是n的因数了。</p>
-<p>另外，这是整数的素因子分解问题，一个整数n的素数因子不可能同时大于sqrt(n）的，所以循环的上限就是sqrt(n)。逐一查看这些素数是否是n的素因子即可，要注意最后除完所有素因子后如果结果&gt;1,这个数也是素因子，所以到这里基本上解题的思路就差不多了，剩下的就是不断地调试，修改判断条件等，直到符合样例输出即可。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include&lt;math.h&gt;</span></span><br><span class="line"><span class="comment">#pragma warning(disable:4996)</span></span><br><span class="line"></span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">	int n;</span><br><span class="line">	int isPrime = 1;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"请输入一个整数:(2&lt;=n&lt;100)\n"</span>);</span><br><span class="line">	scanf(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d="</span>, n);</span><br><span class="line"></span><br><span class="line">	int tn = sqrt(n);</span><br><span class="line">	//<span class="built_in">printf</span>(<span class="string">"%d"</span>, tn);</span><br><span class="line">	<span class="keyword">for</span> (int i = 2; i &lt;= tn; i++) &#123;</span><br><span class="line">		int Flag = 0;</span><br><span class="line">		int count = 0;</span><br><span class="line">		<span class="keyword">if</span> (n%i == 0) &#123;</span><br><span class="line">			isPrime = 0;</span><br><span class="line">			count += 1;</span><br><span class="line">			n = n / i;</span><br><span class="line">			Flag = 1;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span> (n%i == 0) &#123;</span><br><span class="line">			n = n / i;</span><br><span class="line">			count++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (Flag == 1) &#123;</span><br><span class="line">			<span class="keyword">if</span> (count == 1) &#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">"%d"</span>, i);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">"%d^%d"</span>, i, count);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (n != 1) &#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">"*"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> (isPrime!=1&amp;&amp;n != 1) &#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d"</span>, n);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (isPrime == 1) &#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d"</span>,n);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	getchar();</span><br><span class="line">	getchar();</span><br><span class="line"></span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这题其实算比较简单的了，但自己解决起来也不是特别地轻松，数据结构和算法的复习的书要同步地看起来啊。然后今天继续刷题吧。每天一小步，最后也能有很大的改观吧。保研之路，不能松懈，加油！</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/01/22/素因子分解/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -726,18 +722,14 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/09/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -806,6 +798,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.gif"
+                alt="Qian Yang" />
+            
               <p class="site-author-name" itemprop="name">Qian Yang</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -826,11 +822,43 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
 
           </nav>
 
           
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/foxliveray" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:275239328@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -858,7 +886,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -868,6 +898,12 @@
 </div>
 
 
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
+  
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
@@ -877,6 +913,7 @@
 
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
 
 
 
@@ -903,6 +940,9 @@
     
 
   </div>
+  
+  <!-- 页面点击小红心 -->
+<!--<script type="text/javascript" src="/js/src/love.js"></script> -->
 
 
 
