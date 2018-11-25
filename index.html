@@ -300,6 +300,162 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/25/android缓存机制/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Qian Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="y4oung">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/25/android缓存机制/" itemprop="url">android缓存机制</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-25T14:36:30+08:00">
+                2018-11-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  368
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在做android方面的项目，涉及到多图片和多音频的加载问题，每次调用api拉取显然是个费时又费流量的做法，所以在找一些关于缓存方面的资料，具体还没有去尝试实现，在这里先mark一下。</p>
+<h3 id="Android高效加载大图、多图解决方案，有效避免程序OOM"><a href="#Android高效加载大图、多图解决方案，有效避免程序OOM" class="headerlink" title="Android高效加载大图、多图解决方案，有效避免程序OOM"></a>Android高效加载大图、多图解决方案，有效避免程序OOM</h3><p>简介：本篇文章主要内容来自于Android Doc，由郭霖大神翻译和加工，其中防止多图OOM的核心解决思路就是使用LruCache技术。<br>链接：<a href="https://blog.csdn.net/guolin_blog/article/details/9316683" target="_blank" rel="noopener">https://blog.csdn.net/guolin_blog/article/details/9316683</a></p>
+<h3 id="Android-DiskLruCache完全解析，硬盘缓存的最佳方案"><a href="#Android-DiskLruCache完全解析，硬盘缓存的最佳方案" class="headerlink" title="Android DiskLruCache完全解析，硬盘缓存的最佳方案"></a>Android DiskLruCache完全解析，硬盘缓存的最佳方案</h3><p>简介：相比于LruCache是基于内存的缓存机制，本篇的DiskLruCache是基于硬盘的缓存策略，对于做了详细的阐述和使用介绍。<br>链接：<a href="https://blog.csdn.net/guolin_blog/article/details/28863651" target="_blank" rel="noopener">https://blog.csdn.net/guolin_blog/article/details/28863651</a></p>
+<h3 id="Android-DiskLruCache-源码解析-硬盘缓存的绝佳方案"><a href="#Android-DiskLruCache-源码解析-硬盘缓存的绝佳方案" class="headerlink" title="Android DiskLruCache 源码解析 硬盘缓存的绝佳方案"></a>Android DiskLruCache 源码解析 硬盘缓存的绝佳方案</h3><p>简介：本篇是鸿洋大神关于DiskLruCache的源码解析，比起该库的使用，又更进了一步。<br>链接：<a href="https://blog.csdn.net/lmj623565791/article/details/47251585" target="_blank" rel="noopener">https://blog.csdn.net/lmj623565791/article/details/47251585</a></p>
+<h3 id="Android照片墙完整版，完美结合LruCache和DiskLruCache"><a href="#Android照片墙完整版，完美结合LruCache和DiskLruCache" class="headerlink" title="Android照片墙完整版，完美结合LruCache和DiskLruCache"></a>Android照片墙完整版，完美结合LruCache和DiskLruCache</h3><p>简介：单独使用LruCache或者DiskLruCache都是有短板的，这篇通过一个实际的例子结合了两者的使用。<br>链接：<a href="https://blog.csdn.net/guolin_blog/article/details/34093441" target="_blank" rel="noopener">https://blog.csdn.net/guolin_blog/article/details/34093441</a></p>
+<p>大概就是上述几篇文章了，mark完了，去学习和使用了！<br>好久没写博客了，要勤快点更新啊~</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/24/css学习小记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -959,7 +1115,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -972,7 +1128,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -1065,7 +1221,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.4k字</span>
+  <span class="post-count">博客全站共1.7k字</span>
 </div>
         
 

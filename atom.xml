@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-02-24T14:30:18.345Z</updated>
+  <updated>2018-11-25T06:59:38.134Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>android缓存机制</title>
+    <link href="http://yoursite.com/2018/11/25/android%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/"/>
+    <id>http://yoursite.com/2018/11/25/android缓存机制/</id>
+    <published>2018-11-25T06:36:30.368Z</published>
+    <updated>2018-11-25T06:59:38.134Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在做android方面的项目，涉及到多图片和多音频的加载问题，每次调用api拉取显然是个费时又费流量的做法，所以在找一些关于缓存方面的资料，具体还没有去尝试实现，在这里先mark一下。</p><h3 id="Android高效加载大图、多图解决方案，有效避免程序OOM"><a href="#Android高效加载大图、多图解决方案，有效避免程序OOM" class="headerlink" title="Android高效加载大图、多图解决方案，有效避免程序OOM"></a>Android高效加载大图、多图解决方案，有效避免程序OOM</h3><p>简介：本篇文章主要内容来自于Android Doc，由郭霖大神翻译和加工，其中防止多图OOM的核心解决思路就是使用LruCache技术。<br>链接：<a href="https://blog.csdn.net/guolin_blog/article/details/9316683" target="_blank" rel="noopener">https://blog.csdn.net/guolin_blog/article/details/9316683</a></p><h3 id="Android-DiskLruCache完全解析，硬盘缓存的最佳方案"><a href="#Android-DiskLruCache完全解析，硬盘缓存的最佳方案" class="headerlink" title="Android DiskLruCache完全解析，硬盘缓存的最佳方案"></a>Android DiskLruCache完全解析，硬盘缓存的最佳方案</h3><p>简介：相比于LruCache是基于内存的缓存机制，本篇的DiskLruCache是基于硬盘的缓存策略，对于做了详细的阐述和使用介绍。<br>链接：<a href="https://blog.csdn.net/guolin_blog/article/details/28863651" target="_blank" rel="noopener">https://blog.csdn.net/guolin_blog/article/details/28863651</a></p><h3 id="Android-DiskLruCache-源码解析-硬盘缓存的绝佳方案"><a href="#Android-DiskLruCache-源码解析-硬盘缓存的绝佳方案" class="headerlink" title="Android DiskLruCache 源码解析 硬盘缓存的绝佳方案"></a>Android DiskLruCache 源码解析 硬盘缓存的绝佳方案</h3><p>简介：本篇是鸿洋大神关于DiskLruCache的源码解析，比起该库的使用，又更进了一步。<br>链接：<a href="https://blog.csdn.net/lmj623565791/article/details/47251585" target="_blank" rel="noopener">https://blog.csdn.net/lmj623565791/article/details/47251585</a></p><h3 id="Android照片墙完整版，完美结合LruCache和DiskLruCache"><a href="#Android照片墙完整版，完美结合LruCache和DiskLruCache" class="headerlink" title="Android照片墙完整版，完美结合LruCache和DiskLruCache"></a>Android照片墙完整版，完美结合LruCache和DiskLruCache</h3><p>简介：单独使用LruCache或者DiskLruCache都是有短板的，这篇通过一个实际的例子结合了两者的使用。<br>链接：<a href="https://blog.csdn.net/guolin_blog/article/details/34093441" target="_blank" rel="noopener">https://blog.csdn.net/guolin_blog/article/details/34093441</a></p><p>大概就是上述几篇文章了，mark完了，去学习和使用了！<br>好久没写博客了，要勤快点更新啊~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近在做android方面的项目，涉及到多图片和多音频的加载问题，每次调用api拉取显然是个费时又费流量的做法，所以在找一些关于缓存方面的资料，具体还没有去尝试实现，在这里先mark一下。&lt;/p&gt;
+&lt;h3 id=&quot;Android高效加载大图、多图解决方案，有效避免程序OOM
+      
+    
+    </summary>
+    
+    
+      <category term="android" scheme="http://yoursite.com/tags/android/"/>
+    
+  </entry>
   
   <entry>
     <title>css学习小记</title>
